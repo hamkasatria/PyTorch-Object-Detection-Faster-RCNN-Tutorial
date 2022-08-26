@@ -42,6 +42,16 @@ in [requirements.txt](requirements.txt).
 3. Start a jupyter server:
    `jupyter-notebook` OR `jupyter-lab`
 
+## Fast Step Installation
+1. Initialisation All : `make init-requirements-all`
+
+2. Run Training : `make run-training`
+
+3. Run Testing : `make run-testing`
+
+4. Run Realtime Implementation : `make run-realtime`
+
+
 **Note**: This will install the CPU-version of torch. If you want to use a GPU or TPU, please refer to the instructions
 on the [PyTorch website](https://pytorch.org/). To check whether pytorch uses the nvidia gpu, check
 if `torch.cuda.is_available()` returns `True` in a python shell.
