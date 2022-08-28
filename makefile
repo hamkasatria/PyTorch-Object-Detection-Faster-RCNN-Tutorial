@@ -19,6 +19,7 @@ check-format:
 	@echo "Running check flake8..."
 	@flake8 $(shell pwd) --ignore=E501 || true
 
+# ---------------------//----------------
 
 run-realtime:
 	@python realtime.py
@@ -26,14 +27,24 @@ run-realtime:
 run-training:
 	@ipython -c "%run training_script.ipynb"
 
-run-test:
-	@print hello
+run-test-backbone:
+	@python tests/test_backbone_resnet.py
 
+run-test-framework:
+	@python tests/test_faster_RCNN.py
+
+run-test:
+	@make run-test-backbone
+	@make run-test-framework
+	
 init-requirements-all:
-	create-env
+	@make create-env
 	@pip install -r requirements.txt
 	@pip install -r requirements-dev.txt
-	@python setup.py
+	@make run-setup
+	
+run-setup:
+	@python setup.py install
 
 craete-env:
 	@conda create --name faster-rcnn-tutorial -y
