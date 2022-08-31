@@ -12,11 +12,11 @@ with open(HERE / "requirements.txt") as f:
             requirements.append(line)
 
 setuptools.setup(
-    name="pytorch_faster_rcnn_tutorial",
+    name="pytorch_faster_rcnn_module",
     version="0.0.1",
-    author="Johannes Schmidt",
-    author_email="johannes.schmidt.vik@gmail.com",
-    url="https://github.com/johschmidt42/PyTorch-Object-Detection-Faster-RCNN-Tutorial",
+    author="Hamka Satria",
+    author_email="muhhamkasatrianto@gmail.com",
+    url="https://github.com/hamkasatria/PyTorch-Object-Detection-Faster-RCNN-Tutorial",
     packages=setuptools.find_packages(),
     include_package_data=True,
     classifiers=[

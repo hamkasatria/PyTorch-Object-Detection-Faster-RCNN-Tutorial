@@ -22,7 +22,7 @@ anchor boxes:
 - [Inference](inference_script.ipynb)
 - [Renaming script](rename_files_script.ipynb)
 
-The [visual.py](pytorch_faster_rcnn_tutorial/visual.py) script contains the code to visualize a dataset, a list of
+The [visual.py](pytorch_faster_rcnn_module/visual.py) script contains the code to visualize a dataset, a list of
 images, anchor boxes or to create annotations for a dataset. The provided code for this script was written around
 napari [0.4.9](https://napari.org/docs/dev/release/release_0_4_9.html). Other dependencies can be found
 in [requirements.txt](requirements.txt).
@@ -32,17 +32,19 @@ in [requirements.txt](requirements.txt).
 1. Set up a new environment with an environment manager (recommended):
     1. [conda](https://docs.conda.io/en/latest/miniconda.html):
         1. `conda create --name faster-rcnn-tutorial -y`
-        2. `conda activate faster-rcnn-tutorial`
+        2. `conda activate venv-faster-rcnn`
         3. `conda install python=3.8 -y`
     2. [venv](https://docs.python.org/3/library/venv.html):
-        1. `python3 -m venv faster-rcnn-tutorial`
-        2. `source faster-rcnn-tutorial/bin/activate`
+        1. `python3 -m venv venv-faster-rcnn`
+        2. `source venv-faster-rcnn/bin/activate`
 2. Install the libraries:
    `pip install -r requirements.txt`
 3. Start a jupyter server:
    `jupyter-notebook` OR `jupyter-lab`
 
 ## Fast Step Installation
+### note : make sure use conda environment
+
 1. Initialisation All : `make init-requirements-all`
 
 2. Run Training : `make run-training`
@@ -73,14 +75,14 @@ your system. Otherwise, deactivate it in the scripts.
 
 ## Dataset
 
-The [dataset](/Users/johannes/workspace/PyTorch-Object-Detection-Faster-RCNN-Tutorial/pytorch_faster_rcnn_tutorial/data)
+The [dataset](/Users/johannes/workspace/PyTorch-Object-Detection-Faster-RCNN-Tutorial/pytorch_faster_rcnn_module/data)
 consists of 20 selfie-images randomly selected from the internet.
 
 ## Faster-RCNN model
 
 Most of the model's code is based on PyTorch's Faster-RCNN implementation. Metrics can be computed based on
 the [PASCAL VOC](http://host.robots.ox.ac.uk/pascal/VOC/) (**V**isual **O**bject **C**lasses) evaluator in
-the [metrics section](pytorch_faster_rcnn_tutorial/metrics).
+the [metrics section](pytorch_faster_rcnn_module/metrics).
 
 ## Anchor Sizes/Aspect Ratios
 

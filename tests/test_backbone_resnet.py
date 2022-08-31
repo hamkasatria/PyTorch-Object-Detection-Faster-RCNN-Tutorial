@@ -1,7 +1,7 @@
 import pytest
 import torch
 
-from pytorch_faster_rcnn_tutorial.backbone_resnet import (
+from pytorch_faster_rcnn_module.backbone_resnet import (
     BackboneWithFPN,
     ResNetBackbones,
     get_resnet_backbone,

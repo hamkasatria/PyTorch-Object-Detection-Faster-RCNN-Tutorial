@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: pytorch-faster-rcnn-module
+Version: 0.0.1
+Summary: UNKNOWN
+Home-page: https://github.com/hamkasatria/PyTorch-Object-Detection-Faster-RCNN-Tutorial
+Author: Hamka Satria
+Author-email: muhhamkasatrianto@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+
+UNKNOWN
+

@@ -15,20 +15,20 @@ from pytorch_lightning.callbacks import (
 from pytorch_lightning.loggers.neptune import NeptuneLogger
 from torch.utils.data import DataLoader
 
-from pytorch_faster_rcnn_tutorial.backbone_resnet import ResNetBackbones
-from pytorch_faster_rcnn_tutorial.datasets import ObjectDetectionDataSet
-from pytorch_faster_rcnn_tutorial.faster_RCNN import (
+from pytorch_faster_rcnn_module.backbone_resnet import ResNetBackbones
+from pytorch_faster_rcnn_module.datasets import ObjectDetectionDataSet
+from pytorch_faster_rcnn_module.faster_RCNN import (
     FasterRCNNLightning,
     get_faster_rcnn_resnet,
 )
-from pytorch_faster_rcnn_tutorial.transformations import (
+from pytorch_faster_rcnn_module.transformations import (
     AlbumentationWrapper,
     Clip,
     ComposeDouble,
     FunctionWrapperDouble,
     normalize_01,
 )
-from pytorch_faster_rcnn_tutorial.utils import (
+from pytorch_faster_rcnn_module.utils import (
     collate_double,
     get_filenames_of_path,
     log_mapping_neptune,
@@ -82,7 +82,7 @@ def main():
     save_dir = os.getcwd() if not params.SAVE_DIR else params.SAVE_DIR
 
     # root directory
-    root = ROOT_PATH / "pytorch_faster_rcnn_tutorial" / "data" / "heads"
+    root = ROOT_PATH / "pytorch_faster_rcnn_module" / "data" / "heads"
 
     # input and target files
     inputs = get_filenames_of_path(root / "input")

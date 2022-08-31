@@ -42,14 +42,14 @@ init-requirements-all:
 	@pip install -r requirements.txt
 	@pip install -r requirements-dev.txt
 	@make run-setup
-	
+
 run-setup:
 	@python setup.py install
 
-craete-env:
-	@conda create --name faster-rcnn-tutorial -y
-	@conda activate faster-rcnn-tutorial
+create-env:
+	@conda create --name venv-faster-rcnn -y
+	@conda activate venv-faster-rcnn
 	@conda install python=3.8 -y
-	@python3 -m venv faster-rcnn-tutorial
-	@source faster-rcnn-tutorial/bin/activate
+	@python3 -m venv venv-faster-rcnn
+	@source venv-faster-rcnn/bin/activate
 

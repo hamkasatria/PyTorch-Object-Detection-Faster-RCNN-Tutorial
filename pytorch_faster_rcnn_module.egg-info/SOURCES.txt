@@ -1,0 +1,15 @@
+README.md
+setup.py
+pytorch_faster_rcnn_module/__init__.py
+pytorch_faster_rcnn_module/anchor_generator.py
+pytorch_faster_rcnn_module/backbone_resnet.py
+pytorch_faster_rcnn_module/datasets.py
+pytorch_faster_rcnn_module/faster_RCNN.py
+pytorch_faster_rcnn_module/transformations.py
+pytorch_faster_rcnn_module/utils.py
+pytorch_faster_rcnn_module/visual.py
+pytorch_faster_rcnn_module.egg-info/PKG-INFO
+pytorch_faster_rcnn_module.egg-info/SOURCES.txt
+pytorch_faster_rcnn_module.egg-info/dependency_links.txt
+pytorch_faster_rcnn_module.egg-info/requires.txt
+pytorch_faster_rcnn_module.egg-info/top_level.txt

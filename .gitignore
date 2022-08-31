@@ -1,2 +1,5 @@
-# pytorch_faster_rcnn/*
+venv-faster-rcnn
+venv-faster-rcnn/*
 .vscode
+.neptune
+pytorch_faster_rcnn_module/data/*

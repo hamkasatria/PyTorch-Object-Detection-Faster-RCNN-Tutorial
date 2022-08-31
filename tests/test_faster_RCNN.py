@@ -3,8 +3,8 @@ from torchvision.models.detection import FasterRCNN
 from torchvision.models.detection.rpn import AnchorGenerator
 from torchvision.ops import MultiScaleRoIAlign
 
-from pytorch_faster_rcnn_tutorial.backbone_resnet import ResNetBackbones
-from pytorch_faster_rcnn_tutorial.faster_RCNN import (
+from pytorch_faster_rcnn_module.backbone_resnet import ResNetBackbones
+from pytorch_faster_rcnn_module.faster_RCNN import (
     get_anchor_generator,
     get_faster_rcnn_resnet,
     get_roi_pool,
